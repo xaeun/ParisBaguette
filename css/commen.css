@@ -1,0 +1,468 @@
+@charset "utf-8";
+/* 왼쪽하단 asidemenu */
+#asidemenu{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 200;
+}
+#asidemenu ul{
+    width: 74px;
+    padding: 3px 0;
+    border-radius: 5px;
+    background-color: black;
+}
+#asidemenu .active{
+    display: none;
+    border-bottom: 1px solid #999999;
+}
+#asidemenu .active li a{
+    display: block;
+    font-size: 13px;
+    padding: 5px 20px 5px 15px;
+    color: #fff;
+    background-image: url(../img/arr-up.png);
+    background-repeat: no-repeat;
+    background-position: top 8px right 10px;
+}
+#asidemenu .as_menulist li:first-child{
+    padding-top: 15px;
+}
+#asidemenu .as_menulist li a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    padding: 30px 10px 15px 10px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: top 1px center;
+}
+#asidemenu .as_store a{
+    background-image: url(../img/aside_store.svg);
+}
+#asidemenu .as_order a{
+    background-image: url(../img/aside_order-2.svg);
+}
+#asidemenu .as_promise a{
+    background-image: url(../img/aside_promise-3.png);
+}
+#asidemenu .as_info a{
+    background-image: url(../img/aside_franchise.svg);
+}
+#asidemenu .as_app a{
+    background-image: url(../img/aside_mobile-app-2.svg);
+}
+
+.header{
+    position: relative;
+}
+#head{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #fff;
+}
+.head_in{
+    width: 1440px;
+    height: 45px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+.logo a{
+    display: block;
+    width: 360px;
+    height: 45px;
+    background-image: url(../img/pb_logo_05.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999px;
+}
+.head1{
+    display: flex;
+    position: relative;
+}
+.head1 li{
+    margin-right: 20px;
+}
+.head1 li a{
+    display: block;
+    width: 90px;
+    font-size: 16px;
+    line-height: 45px;
+    text-align: center;
+    color: #222;
+    font-weight: 600;
+}
+.head1 li a span{
+    color: #153a7d;
+}
+.head1 > li > a::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: #153a7d;
+    position: absolute;
+    bottom: -30px;    
+}
+.head1 li:hover a::after{
+    width: 90px;
+    transition: 0.3s;
+}
+.head1 .search:hover a::after{
+    display: none;
+}
+
+/* 헤더 - 상품리스트 */
+.h_item_list{
+    display: none;
+    position: absolute;
+    top: 75px;
+    z-index: 100;
+}
+.il_in{
+    background-color: #153a7d;
+    display: flex;
+    padding: 15px 50px;
+}
+.il_in li a{
+    width: 120px;
+    color: #fff;
+    text-align: left;
+}
+.il_in li a:hover{
+    color: yellow;
+}
+.search{ 
+    height: 22px;
+    padding-top: 23px;
+    background-image: url(../img/searh.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999px;
+}
+.h_search{
+    display: none;
+    width: 1440px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 35px;
+    right: 0;
+}
+.h_search input{
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    padding: 0 5px;
+    background-color: #ffffff;
+    border: 1px solid #153a7d;
+}
+.h_search button{
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/ico-alllmenu_close.png);
+    background-repeat: no-repeat;
+    background-position: center right 20px;
+    text-indent: -9999px;
+    position: absolute;
+    top: 7px;
+    right: 10px;
+}
+.headBn{
+    height: 300px;
+    background-image: url(../img/pb_magabn_02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    margin-top: 110px;
+    margin-bottom: 50px;
+}
+/* 푸터-인스타그램 */
+.f_insta{
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+}
+.f_insta h2{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.f_insta h2 a{
+    font-size: 25px;
+    color: #222;
+}
+.f_insta .m5_title{
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.f_img{
+    display: flex;
+    justify-content: space-between;
+}
+.f_img_list{
+    position: relative;
+}
+.f_img_list p{
+    width: 315px;
+    height: 315px;
+}
+.f_img_list p img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.f_img_text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    color: #fff;
+    font-size: 15px;
+}
+.f_img_text span{
+   text-align: center;
+   position: absolute;
+   top: 125px;
+   padding: 0 20px;
+}
+.f_img_text:hover{
+    opacity: 1;
+}
+.f_insta .slick-arrow{
+    position: absolute;
+    top: 135px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-indent: -9999px;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 100;
+}
+.f_insta .slick-prev{
+    left: 0;
+    background-image: url(../img/prev.png);
+}
+.f_insta .slick-next{
+    right: 0;
+    background-image: url(../img/next.png);
+}
+
+/* 푸터 1 - 공지사항 */
+#foot1{
+    width: 1440px;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+#foot1 div{
+    width: 360px;
+    padding-left: 55px;
+    padding-right: 65px;
+    border-right: 1px solid #aaa;
+    background-image: url(../img/arrow_next_gray.jpg);
+    background-repeat: no-repeat;
+    background-position: 430px;
+}
+#foot1 div:last-child{
+    border-right: 0;
+}
+#foot1 div:hover{
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0, 0, 0, 0.2));
+}
+.f1_title{
+    font-size: 18px;
+    line-height: 1.2em;
+    color: #153a7d;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.f1_txt{
+    color: #222;
+    width: 310px;
+    font-size: 16px;
+    font-weight: 500;
+    word-break: keep-all;
+    padding-bottom: 15px;
+}
+/* 푸터2- 정보 */
+#foot2{
+    background-color: #454a56;
+    padding-top: 75px;
+    border-bottom: 1px solid #999;
+}
+.foot2_in{
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-bottom: 125px;
+}
+.f2_title{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.info{
+    margin-right: 275px;
+}
+.info li{
+    margin-bottom: 13px;
+}
+.info li a{
+    color: #fff;
+    font-weight: 500;
+}
+.info li a:hover{
+    border-bottom: 1px solid #fff;
+}
+.contact{
+    margin-right: 135px;
+}
+.contact li{
+    margin-bottom: 13px;
+    color: #fff;
+    font-weight: 500;
+}
+.contact li a{
+    color: #fff;
+    font-weight: 500;
+}
+.contact li a:hover{
+    border-bottom: 1px solid #fff;
+}
+.mark{
+    margin-right: 50px;
+}
+.mark .spc{
+    width: 129px;
+    height: 43px;
+    margin-bottom: 20px;
+}
+.mark .f1_ma{
+    display: flex;
+}
+.f1_ma p{
+    width: 63px;
+    height: 40px;
+    margin-right: 14px;
+}
+.f1_ma p:last-child{
+    margin-right: 0;
+}
+.f1_ma p img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.follow .sns{
+    display: flex;
+    margin-bottom: 30px;
+}
+.sns p{
+    width: 50px;
+    height: 50px;
+    text-indent: -9999px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 30px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+.facebook{
+    background-image: url(../img/sns_ico_01_facebook.svg);
+}
+.instagram{
+    background-image: url(../img/sns_ico_02_instagram.svg);
+}
+.youtube{
+    background-image: url(../img/sns_ico_03_youtube.svg);
+}
+.site a{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 18px;
+    padding-right: 120px;
+    border: 2px solid #777;
+    border-radius: 10px;
+    background-image: url(../img/arr-up.png);
+    background-repeat: no-repeat;
+    background-position: 185px center;
+    color: #fff;
+    font-size: 15px;
+}
+.foot2{
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.f2_manu{
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+.f2_manu p{
+    position: relative;
+}
+.f2_manu p::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 7px;
+    right: 0;
+    width: 1px;
+    height: 11px;
+    background-color: #fff;
+}
+.f2_manu p:last-child::after{
+    content: none;
+}
+.f2_manu p a{
+    font-size: 11px;
+    color: #fff;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.f2_manu .active a{
+    color: red;
+}
+/* 푸터3- copyright */
+#foot3{
+    background-color: #454a56;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.f3_in{
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.f3_in p{
+    color:#999;
+    font-size: 11px;
+    text-align: center;
+}

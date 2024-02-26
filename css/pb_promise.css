@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+.headBn{
+    background-image: url(../img/pbpormbn-1_04.jpg);
+}
+/* 메인 1 */
+.main1{
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.main1 h2{
+    font-size: 35px;
+    line-height: 1em;
+    letter-spacing: 1.4px;
+    margin-bottom: 16px;
+}
+.m1_txt{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.m1_txt1 a{
+    font-size: 15px;
+    color: #888;
+}
+.m1_txt1 a:hover{
+    border-bottom: 1px solid #999;
+}
+.m1_txt2{
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 18px;
+    color: #888;
+}
+/* 메인 2 */
+.main2{
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;    
+    margin-bottom: 100px;
+}
+.main2 ul{
+    display: flex;
+    justify-content: center;
+}
+.main2 li{
+    margin-right: 15px; 
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.main2 li:last-child{
+    margin-right: 0;
+}
+.main2 li a{
+    font-size: 20px;
+    color: #888;
+    font-weight: 500;
+    line-height: 55px;
+}
+.main2 span{
+    color: #153a7d;
+}
+/* 메인 3 */
+.main3{
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.m3_title{
+    font-size: 30px;
+    color: #153a7d;
+    line-height: 1.5em;
+}
+/* 메인 4 */
+.main4{
+    background-color: #f6f6f6;
+    margin-bottom: 100px;
+}
+#m4_in{
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#m4_in ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+#m4_in li{
+    width: 550px;
+}
+.prom_img{
+    margin-bottom: 30px;
+}
+.prom_more1, .prom_more2{
+    text-align: end;
+}
+.prom_more1 a, .prom_more2 a{
+    padding-top: 5px;
+    padding-bottom: 7px;
+    padding-left: 18px;
+    padding-right: 15px;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+.prom_more1 a{      
+    background-color: #032878;
+}
+.prom_more2 a{
+    background-color: #114abd;
+}
+.prom_logo{
+    text-align: center;
+}
